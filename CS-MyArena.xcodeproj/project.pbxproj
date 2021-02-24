@@ -3,26 +3,91 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		446C2BC825DFE5DB0037C732 /* Metropolis-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9B25DFE1B90037C732 /* Metropolis-Black.otf */; };
+		446C2BCA25DFE5E00037C732 /* Metropolis-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9625DFE1B90037C732 /* Metropolis-BlackItalic.otf */; };
+		446C2BCE25DFE5E60037C732 /* Metropolis-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2BA025DFE1BB0037C732 /* Metropolis-BoldItalic.otf */; };
+		446C2BD025DFE5EA0037C732 /* Metropolis-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2BA425DFE1BB0037C732 /* Metropolis-ExtraBold.otf */; };
+		446C2BD225DFE5ED0037C732 /* Metropolis-ExtraBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2BA325DFE1BB0037C732 /* Metropolis-ExtraBoldItalic.otf */; };
+		446C2BD425DFE5EF0037C732 /* Metropolis-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9F25DFE1BA0037C732 /* Metropolis-ExtraLight.otf */; };
+		446C2BD625DFE5FC0037C732 /* Metropolis-ExtraLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9725DFE1B90037C732 /* Metropolis-ExtraLightItalic.otf */; };
+		446C2BD825DFE5FE0037C732 /* Metropolis-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2BA625DFE1BC0037C732 /* Metropolis-Light.otf */; };
+		446C2BDA25DFE6020037C732 /* Metropolis-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2BA125DFE1BB0037C732 /* Metropolis-LightItalic.otf */; };
+		446C2BDC25DFE6040037C732 /* Metropolis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9D25DFE1BA0037C732 /* Metropolis-Medium.otf */; };
+		446C2BDE25DFE60C0037C732 /* Metropolis-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2BA225DFE1BB0037C732 /* Metropolis-MediumItalic.otf */; };
+		446C2BE225DFE6100037C732 /* Metropolis-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9E25DFE1BA0037C732 /* Metropolis-RegularItalic.otf */; };
+		446C2BE625DFE6150037C732 /* Metropolis-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9C25DFE1BA0037C732 /* Metropolis-SemiBoldItalic.otf */; };
+		446C2BE825DFE6170037C732 /* Metropolis-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9925DFE1B90037C732 /* Metropolis-Thin.otf */; };
+		446C2BEA25DFE61A0037C732 /* Metropolis-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9A25DFE1B90037C732 /* Metropolis-ThinItalic.otf */; };
+		446C2BEC25DFE61C0037C732 /* Metropolis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9325DFE0530037C732 /* Metropolis-Regular.otf */; };
+		446C2BEE25DFE61F0037C732 /* Metropolis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B6A25DFB9180037C732 /* Metropolis-Bold.otf */; };
+		446C2BF025DFE6220037C732 /* Metropolis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B6B25DFB9180037C732 /* Metropolis-SemiBold.otf */; };
+		446C2BF625E0012C0037C732 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446C2BF525E0012C0037C732 /* Server.swift */; };
+		448CA2F425DE7BEF00E57FDE /* MyArenaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448CA2F325DE7BEF00E57FDE /* MyArenaService.swift */; };
+		448CA31225DF0F4100E57FDE /* ServerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448CA31125DF0F4100E57FDE /* ServerResult.swift */; };
+		448CA31725DF18E100E57FDE /* ServersListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448CA31525DF18E100E57FDE /* ServersListTableViewController.swift */; };
+		448CA31D25DF1A9A00E57FDE /* ServersListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448CA31B25DF1A9A00E57FDE /* ServersListTableViewCell.swift */; };
+		448CA31E25DF1A9A00E57FDE /* ServersListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448CA31C25DF1A9A00E57FDE /* ServersListTableViewCell.xib */; };
 		44A2610425DD7283009A44DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2610325DD7283009A44DA /* AppDelegate.swift */; };
 		44A2610625DD7283009A44DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2610525DD7283009A44DA /* SceneDelegate.swift */; };
-		44A2610825DD7283009A44DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2610725DD7283009A44DA /* ViewController.swift */; };
 		44A2610D25DD72A0009A44DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A2610C25DD72A0009A44DA /* Assets.xcassets */; };
 		44A2611025DD72A0009A44DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A2610E25DD72A0009A44DA /* LaunchScreen.storyboard */; };
+		44A2612725DD7F51009A44DA /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2612625DD7F51009A44DA /* Box.swift */; };
+		44A2613825DD83CC009A44DA /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A2613725DD83CC009A44DA /* NibLoadable.swift */; };
+		44A3C50825E1C0800098D77E /* ServerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3C50625E1C0800098D77E /* ServerInfoViewController.swift */; };
+		44A3C50925E1C0800098D77E /* ServerInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A3C50725E1C0800098D77E /* ServerInfoViewController.xib */; };
+		44A3C51F25E265C30098D77E /* AddServerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3C51D25E265C30098D77E /* AddServerViewController.swift */; };
+		44A3C52025E265C30098D77E /* AddServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A3C51E25E265C30098D77E /* AddServerViewController.xib */; };
+		44A3C52B25E2A6150098D77E /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3C52A25E2A6150098D77E /* NetworkError.swift */; };
+		44A3C53025E2D2120098D77E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3C52F25E2D2120098D77E /* DataManager.swift */; };
 		CC1028F7DEAB65D00DE7A998 /* Pods_CS_MyArena.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664935A9664E2135583800AE /* Pods_CS_MyArena.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		446C2B6A25DFB9180037C732 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
+		446C2B6B25DFB9180037C732 /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
+		446C2B9325DFE0530037C732 /* Metropolis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Regular.otf"; sourceTree = "<group>"; };
+		446C2B9625DFE1B90037C732 /* Metropolis-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-BlackItalic.otf"; sourceTree = "<group>"; };
+		446C2B9725DFE1B90037C732 /* Metropolis-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		446C2B9825DFE1B90037C732 /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Metropolis-SemiBold.otf"; path = "../../../../../Desktop/metropolis/Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
+		446C2B9925DFE1B90037C732 /* Metropolis-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Thin.otf"; sourceTree = "<group>"; };
+		446C2B9A25DFE1B90037C732 /* Metropolis-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ThinItalic.otf"; sourceTree = "<group>"; };
+		446C2B9B25DFE1B90037C732 /* Metropolis-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Black.otf"; sourceTree = "<group>"; };
+		446C2B9C25DFE1BA0037C732 /* Metropolis-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		446C2B9D25DFE1BA0037C732 /* Metropolis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Medium.otf"; sourceTree = "<group>"; };
+		446C2B9E25DFE1BA0037C732 /* Metropolis-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-RegularItalic.otf"; sourceTree = "<group>"; };
+		446C2B9F25DFE1BA0037C732 /* Metropolis-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ExtraLight.otf"; sourceTree = "<group>"; };
+		446C2BA025DFE1BB0037C732 /* Metropolis-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-BoldItalic.otf"; sourceTree = "<group>"; };
+		446C2BA125DFE1BB0037C732 /* Metropolis-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-LightItalic.otf"; sourceTree = "<group>"; };
+		446C2BA225DFE1BB0037C732 /* Metropolis-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-MediumItalic.otf"; sourceTree = "<group>"; };
+		446C2BA325DFE1BB0037C732 /* Metropolis-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		446C2BA425DFE1BB0037C732 /* Metropolis-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-ExtraBold.otf"; sourceTree = "<group>"; };
+		446C2BA525DFE1BC0037C732 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Metropolis-Bold.otf"; path = "../../../../../Desktop/metropolis/Metropolis-Bold.otf"; sourceTree = "<group>"; };
+		446C2BA625DFE1BC0037C732 /* Metropolis-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Light.otf"; sourceTree = "<group>"; };
+		446C2BA725DFE1BC0037C732 /* Metropolis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Metropolis-Regular.otf"; path = "../../../../../Desktop/metropolis/Metropolis-Regular.otf"; sourceTree = "<group>"; };
+		446C2BF525E0012C0037C732 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		448CA2F325DE7BEF00E57FDE /* MyArenaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyArenaService.swift; sourceTree = "<group>"; };
+		448CA31125DF0F4100E57FDE /* ServerResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerResult.swift; sourceTree = "<group>"; };
+		448CA31525DF18E100E57FDE /* ServersListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersListTableViewController.swift; sourceTree = "<group>"; };
+		448CA31B25DF1A9A00E57FDE /* ServersListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersListTableViewCell.swift; sourceTree = "<group>"; };
+		448CA31C25DF1A9A00E57FDE /* ServersListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServersListTableViewCell.xib; sourceTree = "<group>"; };
 		44A2610025DD7283009A44DA /* CS-MyArena.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS-MyArena.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A2610325DD7283009A44DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44A2610525DD7283009A44DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44A2610725DD7283009A44DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44A2610C25DD72A0009A44DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A2610F25DD72A0009A44DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A2611125DD72A0009A44DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A2612625DD7F51009A44DA /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		44A2613725DD83CC009A44DA /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		44A3C50625E1C0800098D77E /* ServerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerInfoViewController.swift; sourceTree = "<group>"; };
+		44A3C50725E1C0800098D77E /* ServerInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerInfoViewController.xib; sourceTree = "<group>"; };
+		44A3C51D25E265C30098D77E /* AddServerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerViewController.swift; sourceTree = "<group>"; };
+		44A3C51E25E265C30098D77E /* AddServerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddServerViewController.xib; sourceTree = "<group>"; };
+		44A3C52A25E2A6150098D77E /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		44A3C52F25E2D2120098D77E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		51ABC9F2C0C40CC11601CFB3 /* Pods-CS-MyArena.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-MyArena.debug.xcconfig"; path = "Target Support Files/Pods-CS-MyArena/Pods-CS-MyArena.debug.xcconfig"; sourceTree = "<group>"; };
 		664935A9664E2135583800AE /* Pods_CS_MyArena.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CS_MyArena.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B391D784E6E3E68D3E6191 /* Pods-CS-MyArena.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS-MyArena.release.xcconfig"; path = "Target Support Files/Pods-CS-MyArena/Pods-CS-MyArena.release.xcconfig"; sourceTree = "<group>"; };
@@ -40,6 +105,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		446C2B6825DFB8EE0037C732 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				446C2B6925DFB8F60037C732 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		446C2B6925DFB8F60037C732 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				446C2B9B25DFE1B90037C732 /* Metropolis-Black.otf */,
+				446C2B9625DFE1B90037C732 /* Metropolis-BlackItalic.otf */,
+				446C2BA525DFE1BC0037C732 /* Metropolis-Bold.otf */,
+				446C2BA025DFE1BB0037C732 /* Metropolis-BoldItalic.otf */,
+				446C2BA425DFE1BB0037C732 /* Metropolis-ExtraBold.otf */,
+				446C2BA325DFE1BB0037C732 /* Metropolis-ExtraBoldItalic.otf */,
+				446C2B9F25DFE1BA0037C732 /* Metropolis-ExtraLight.otf */,
+				446C2B9725DFE1B90037C732 /* Metropolis-ExtraLightItalic.otf */,
+				446C2BA625DFE1BC0037C732 /* Metropolis-Light.otf */,
+				446C2BA125DFE1BB0037C732 /* Metropolis-LightItalic.otf */,
+				446C2B9D25DFE1BA0037C732 /* Metropolis-Medium.otf */,
+				446C2BA225DFE1BB0037C732 /* Metropolis-MediumItalic.otf */,
+				446C2BA725DFE1BC0037C732 /* Metropolis-Regular.otf */,
+				446C2B9E25DFE1BA0037C732 /* Metropolis-RegularItalic.otf */,
+				446C2B9825DFE1B90037C732 /* Metropolis-SemiBold.otf */,
+				446C2B9C25DFE1BA0037C732 /* Metropolis-SemiBoldItalic.otf */,
+				446C2B9925DFE1B90037C732 /* Metropolis-Thin.otf */,
+				446C2B9A25DFE1B90037C732 /* Metropolis-ThinItalic.otf */,
+				446C2B9325DFE0530037C732 /* Metropolis-Regular.otf */,
+				446C2B6A25DFB9180037C732 /* Metropolis-Bold.otf */,
+				446C2B6B25DFB9180037C732 /* Metropolis-SemiBold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		448CA2F225DE7BCC00E57FDE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				44A3C52F25E2D2120098D77E /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		448CA2FF25DE858000E57FDE /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		448CA31A25DF1A7200E57FDE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				448CA31B25DF1A9A00E57FDE /* ServersListTableViewCell.swift */,
+				448CA31C25DF1A9A00E57FDE /* ServersListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		44A260F725DD7282009A44DA = {
 			isa = PBXGroup;
 			children = (
@@ -61,14 +186,100 @@
 		44A2610225DD7283009A44DA /* CS-MyArena */ = {
 			isa = PBXGroup;
 			children = (
-				44A2610325DD7283009A44DA /* AppDelegate.swift */,
-				44A2610525DD7283009A44DA /* SceneDelegate.swift */,
-				44A2610725DD7283009A44DA /* ViewController.swift */,
+				44A2613A25DD8400009A44DA /* Screens */,
+				44A2612225DD7CAC009A44DA /* Models */,
+				44A2613625DD8270009A44DA /* Services */,
+				448CA2F225DE7BCC00E57FDE /* Managers */,
+				448CA2FF25DE858000E57FDE /* Extentions */,
+				44A2612525DD7F44009A44DA /* Utilities */,
+				44A2612B25DD7FD3009A44DA /* Storyboards */,
+				44A2612925DD7F77009A44DA /* Supporting Files */,
 				44A2610C25DD72A0009A44DA /* Assets.xcassets */,
-				44A2610E25DD72A0009A44DA /* LaunchScreen.storyboard */,
-				44A2611125DD72A0009A44DA /* Info.plist */,
+				446C2B6825DFB8EE0037C732 /* Resources */,
 			);
 			path = "CS-MyArena";
+			sourceTree = "<group>";
+		};
+		44A2612225DD7CAC009A44DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				448CA31125DF0F4100E57FDE /* ServerResult.swift */,
+				446C2BF525E0012C0037C732 /* Server.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44A2612525DD7F44009A44DA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				44A2612625DD7F51009A44DA /* Box.swift */,
+				44A2613725DD83CC009A44DA /* NibLoadable.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		44A2612925DD7F77009A44DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44A2610325DD7283009A44DA /* AppDelegate.swift */,
+				44A2610525DD7283009A44DA /* SceneDelegate.swift */,
+				44A2611125DD72A0009A44DA /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44A2612B25DD7FD3009A44DA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				44A2610E25DD72A0009A44DA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		44A2613625DD8270009A44DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44A3C52A25E2A6150098D77E /* NetworkError.swift */,
+				448CA2F325DE7BEF00E57FDE /* MyArenaService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		44A2613A25DD8400009A44DA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				44A3C51C25E265A80098D77E /* AddServer */,
+				44A2615625DD848E009A44DA /* ServersList */,
+				44A3C50525E1C0680098D77E /* ServerInfo */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		44A2615625DD848E009A44DA /* ServersList */ = {
+			isa = PBXGroup;
+			children = (
+				448CA31A25DF1A7200E57FDE /* Cell */,
+				448CA31525DF18E100E57FDE /* ServersListTableViewController.swift */,
+			);
+			path = ServersList;
+			sourceTree = "<group>";
+		};
+		44A3C50525E1C0680098D77E /* ServerInfo */ = {
+			isa = PBXGroup;
+			children = (
+				44A3C50625E1C0800098D77E /* ServerInfoViewController.swift */,
+				44A3C50725E1C0800098D77E /* ServerInfoViewController.xib */,
+			);
+			path = ServerInfo;
+			sourceTree = "<group>";
+		};
+		44A3C51C25E265A80098D77E /* AddServer */ = {
+			isa = PBXGroup;
+			children = (
+				44A3C51D25E265C30098D77E /* AddServerViewController.swift */,
+				44A3C51E25E265C30098D77E /* AddServerViewController.xib */,
+			);
+			path = AddServer;
 			sourceTree = "<group>";
 		};
 		80AE47B37AD3A32A3CE20502 /* Frameworks */ = {
@@ -85,7 +296,6 @@
 				51ABC9F2C0C40CC11601CFB3 /* Pods-CS-MyArena.debug.xcconfig */,
 				67B391D784E6E3E68D3E6191 /* Pods-CS-MyArena.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,6 +332,7 @@
 				TargetAttributes = {
 					44A260FF25DD7283009A44DA = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -148,8 +359,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A3C50925E1C0800098D77E /* ServerInfoViewController.xib in Resources */,
+				446C2BC825DFE5DB0037C732 /* Metropolis-Black.otf in Resources */,
+				446C2BF025DFE6220037C732 /* Metropolis-SemiBold.otf in Resources */,
+				44A3C52025E265C30098D77E /* AddServerViewController.xib in Resources */,
+				446C2BD425DFE5EF0037C732 /* Metropolis-ExtraLight.otf in Resources */,
+				446C2BE225DFE6100037C732 /* Metropolis-RegularItalic.otf in Resources */,
+				446C2BD225DFE5ED0037C732 /* Metropolis-ExtraBoldItalic.otf in Resources */,
+				446C2BD825DFE5FE0037C732 /* Metropolis-Light.otf in Resources */,
+				446C2BEA25DFE61A0037C732 /* Metropolis-ThinItalic.otf in Resources */,
+				446C2BDE25DFE60C0037C732 /* Metropolis-MediumItalic.otf in Resources */,
+				446C2BCA25DFE5E00037C732 /* Metropolis-BlackItalic.otf in Resources */,
+				446C2BCE25DFE5E60037C732 /* Metropolis-BoldItalic.otf in Resources */,
 				44A2611025DD72A0009A44DA /* LaunchScreen.storyboard in Resources */,
+				448CA31E25DF1A9A00E57FDE /* ServersListTableViewCell.xib in Resources */,
+				446C2BE625DFE6150037C732 /* Metropolis-SemiBoldItalic.otf in Resources */,
+				446C2BEE25DFE61F0037C732 /* Metropolis-Bold.otf in Resources */,
 				44A2610D25DD72A0009A44DA /* Assets.xcassets in Resources */,
+				446C2BD025DFE5EA0037C732 /* Metropolis-ExtraBold.otf in Resources */,
+				446C2BEC25DFE61C0037C732 /* Metropolis-Regular.otf in Resources */,
+				446C2BDA25DFE6020037C732 /* Metropolis-LightItalic.otf in Resources */,
+				446C2BDC25DFE6040037C732 /* Metropolis-Medium.otf in Resources */,
+				446C2BE825DFE6170037C732 /* Metropolis-Thin.otf in Resources */,
+				446C2BD625DFE5FC0037C732 /* Metropolis-ExtraLightItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,8 +434,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A2610825DD7283009A44DA /* ViewController.swift in Sources */,
+				44A3C50825E1C0800098D77E /* ServerInfoViewController.swift in Sources */,
+				44A2612725DD7F51009A44DA /* Box.swift in Sources */,
 				44A2610425DD7283009A44DA /* AppDelegate.swift in Sources */,
+				44A3C51F25E265C30098D77E /* AddServerViewController.swift in Sources */,
+				448CA2F425DE7BEF00E57FDE /* MyArenaService.swift in Sources */,
+				448CA31725DF18E100E57FDE /* ServersListTableViewController.swift in Sources */,
+				446C2BF625E0012C0037C732 /* Server.swift in Sources */,
+				448CA31225DF0F4100E57FDE /* ServerResult.swift in Sources */,
+				44A2613825DD83CC009A44DA /* NibLoadable.swift in Sources */,
+				44A3C52B25E2A6150098D77E /* NetworkError.swift in Sources */,
+				448CA31D25DF1A9A00E57FDE /* ServersListTableViewCell.swift in Sources */,
+				44A3C53025E2D2120098D77E /* DataManager.swift in Sources */,
 				44A2610625DD7283009A44DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -328,6 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -344,15 +588,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7CDW888W99;
-				INFOPLIST_FILE = "CS-MyArena/Info.plist";
+				DEVELOPMENT_TEAM = D672799VP9;
+				INFOPLIST_FILE = "$(SRCROOT)/CS-MyArena/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.alik.CS-MyArena";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.al1k24.CS-MyArena";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -364,15 +612,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7CDW888W99;
-				INFOPLIST_FILE = "CS-MyArena/Info.plist";
+				DEVELOPMENT_TEAM = D672799VP9;
+				INFOPLIST_FILE = "$(SRCROOT)/CS-MyArena/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "xyz.alik.CS-MyArena";
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.al1k24.CS-MyArena";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
