@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Medium.otf">
+            <string>Metropolis-Medium</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddServerViewController" customModule="CS_MyArena" customModuleProvider="target">
+            <connections>
+                <outlet property="addServerButton" destination="OYp-pP-bp8" id="8RX-Ut-iee"/>
+                <outlet property="tokenField" destination="tGN-UU-Bl6" id="XJy-d3-MO2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="token" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tGN-UU-Bl6">
+                    <rect key="frame" x="16" y="119" width="382" height="64"/>
+                    <color key="backgroundColor" name="Dark"/>
+                    <color key="tintColor" name="Gray"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Qmp-ec-t9U"/>
+                    </constraints>
+                    <color key="textColor" name="Gray"/>
+                    <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new server" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlC-ky-z4g">
+                    <rect key="frame" x="16" y="80" width="382" height="21"/>
+                    <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="18"/>
+                    <color key="textColor" name="White"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYp-pP-bp8">
+                    <rect key="frame" x="16" y="215" width="382" height="48"/>
+                    <color key="backgroundColor" name="Primary"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="VJ9-IZ-Kto"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
+                    <color key="tintColor" name="White"/>
+                    <state key="normal" title="ADD SERVER">
+                        <color key="titleColor" name="White"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Background"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OYp-pP-bp8" secondAttribute="trailing" constant="16" id="8jF-3p-NfF"/>
+                <constraint firstItem="OYp-pP-bp8" firstAttribute="top" secondItem="tGN-UU-Bl6" secondAttribute="bottom" constant="32" id="99D-th-Kom"/>
+                <constraint firstItem="tGN-UU-Bl6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Djt-ae-k5v"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hlC-ky-z4g" secondAttribute="trailing" constant="16" id="GMV-wf-RtL"/>
+                <constraint firstItem="hlC-ky-z4g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Mod-Je-EDB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tGN-UU-Bl6" secondAttribute="trailing" constant="16" id="P3g-VX-wIv"/>
+                <constraint firstItem="OYp-pP-bp8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="QvT-1s-NCT"/>
+                <constraint firstItem="hlC-ky-z4g" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="rHm-oE-EC6"/>
+                <constraint firstItem="tGN-UU-Bl6" firstAttribute="top" secondItem="hlC-ky-z4g" secondAttribute="bottom" constant="18" id="wA0-U2-h5U"/>
+            </constraints>
+            <point key="canvasLocation" x="-28" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.11764705882352941" green="0.12156862745098039" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Dark">
+            <color red="0.16500000655651093" green="0.17299999296665192" blue="0.21199999749660492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gray">
+            <color red="0.6705882352941176" green="0.70196078431372544" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
+            <color red="0.93725490196078431" green="0.21176470588235294" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
