@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (5.4.0)
-  - SwiftyJSON (5.0.0)
+  - SPAlert (3.0.3)
+  - SPStorkController (1.8.4)
 
 DEPENDENCIES:
   - Alamofire
-  - SwiftyJSON
+  - SPAlert
+  - SPStorkController
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - SwiftyJSON
+    - SPAlert
+    - SPStorkController
 
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
-  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  SPAlert: f01599d5224e93547cbb9364b2c42e88074644b9
+  SPStorkController: 95926db63e1c5826f38f1c108b159a3c35c588a6
 
-PODFILE CHECKSUM: c2cbb7e536d516993cee4cfd559ad27ea3b7c9e7
+PODFILE CHECKSUM: 4dabd2c11e8857e2ee2e8e004a93d04a8bdb4111
 
 COCOAPODS: 1.10.0
