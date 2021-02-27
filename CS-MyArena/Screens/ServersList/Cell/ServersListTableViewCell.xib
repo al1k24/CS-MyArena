@@ -31,7 +31,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="de_prodigy" translatesAutoresizingMaskIntoConstraints="NO" id="IEy-xO-ieD">
                                 <rect key="frame" x="0.0" y="0.0" width="136" height="104"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="136" id="QlX-wN-GTB"/>
+                                    <constraint firstAttribute="width" secondItem="IEy-xO-ieD" secondAttribute="height" multiplier="17:13" id="bak-zK-7dp"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Server name )))" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50j-wd-XvG">

@@ -11,16 +11,25 @@ class ServerInfoViewController: UIViewController {
     
     deinit { print("* deinit -> ServerInfoViewController") }
     
-//    lazy var server: Server
+    @IBOutlet weak var mapImage: UIImageView!
+    
+    private var token: String?
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tabBarItem.title = "ServerInfo"
+        let darkBlur = UIBlurEffect(style: .regular)
+        // 2
+        let blurView = UIVisualEffectView(effect: darkBlur)
+        blurView.frame = mapImage.bounds
+        blurView.alpha = 0.7
+        blurView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        blurView.frame = mapImage.bounds
+        // 3
+        mapImage.addSubview(blurView)
         
-//        view.backgroundColor = .green
-//        self.navigationItem.title = "Server ID #\(serverId)"
-//        self.navigationItem.largeTitleDisplayMode = .never
-//        self.navigationController?.navigationBar.topItem?.backBarButtonItem = .init(title: "", style: .plain, target: nil, action: nil)
+//        print("-> ServerInfoViewController -> \(token!)")
     }
 }

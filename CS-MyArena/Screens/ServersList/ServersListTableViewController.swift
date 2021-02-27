@@ -16,29 +16,15 @@ class ServersListTableViewController: UITableViewController {
     private var tokens = [ //Для теста пока так
         "9995a3c768b8a71c33023fe2b2ef393e"
     ]
-    private var servers = [Server]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureNavigationsBarItems("Servers list")
         configureTableView()
-        
-        loadServerData() //Тест
     }
     
-    //Для тестов
-    private func loadServerData() {
-        for token in tokens {
-            DataManager.shared.getServerStatusData(by: token) { [weak self] data in
-                guard let data = data else { return }
-                guard let self = self else { return }
-                
-                self.servers.append(data)
-                self.tableView.reloadData()
-            }
-        }
-    }
+    weak var delegate: ServerListDelegate?
     
     // MARK: - Table view
     private func configureTableView() {
@@ -111,15 +97,23 @@ class ServersListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return servers.count
+        return tokens.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ServersListTableViewCell.nibName, for: indexPath) as! ServersListTableViewCell
         
-        print(servers[indexPath.row])
-        cell.configure(with: servers[indexPath.row])
+//        print(servers[indexPath.row])
+        DataManager.shared.getServerStatusData(by: tokens[indexPath.row]) { data in
+            guard let data = data else { return }
+//            guard let self = self else { return }
 
+//            self.servers.append(data)
+            cell.configure(with: data)
+//            print(data)
+//                tableView.reloadData()
+        }
+    
         return cell
     }
     
@@ -128,33 +122,90 @@ class ServersListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let server = servers[indexPath.row]
+        let serverInfoVC: UIViewController = {
+            let vc = ServerInfoViewController()
+            vc.tabBarItem = UITabBarItem(title: "Info",
+                                         image: UIImage(systemName: "house"),
+                                         selectedImage: UIImage(systemName: "house.fill"))
+            return vc
+        }()
+        
         let viewControllers = [
-            ServerInfoViewController(),
-            SecondViewController()
+            serverInfoVC,
+            ServerPlayersViewController(),
+            ServerMapsTableViewController(),
+            ServerConsoleViewController()
         ]
         
-        viewControllers[0].title = "Info"
-        viewControllers[1].title = "Red"
+        viewControllers[1].tabBarItem = UITabBarItem(title: "Players",
+                                                     image: UIImage(systemName: "person.2"),
+                                                     selectedImage: UIImage(systemName: "person.2.fill"))
+        viewControllers[2].tabBarItem = UITabBarItem(title: "Maps",
+                                                     image: UIImage(systemName: "map"),
+                                                     selectedImage: UIImage(systemName: "map.fill"))
+        viewControllers[3].tabBarItem = UITabBarItem(title: "Console",
+                                                     image: UIImage(systemName: "text.bubble"),
+                                                     selectedImage: UIImage(systemName: "text.bubble.fill"))
         
         //https://www.youtube.com/watch?v=6CEWHlM8Ecw
-        let tabBarController = UITabBarController()
+        let tabBarController = TestTabBarVC()
+        self.delegate = tabBarController
+//        tabBarController.viewControllers = viewControllers.map { UINavigationController(rootViewController: $0)}
         tabBarController.setViewControllers(viewControllers, animated: true)
         
-//        self.navigationItem.largeTitleDisplayMode = .never
-//        self.navigationController?.navigationBar.topItem?.backBarButtonItem = .init(title: "", style: .plain, target: nil, action: nil)
+        let appearance = UITabBarAppearance()
+        appearance.shadowColor = .clear
+        appearance.backgroundColor = UIColor(named: "Background")
+        setTabBarItemColors(appearance.stackedLayoutAppearance)
+        
+        tabBarController.tabBar.standardAppearance = appearance
         
         navigationController?.pushViewController(tabBarController, animated: true)
+        
+        delegate?.onServerTapped(with: tokens[indexPath.row])
+    }
+    
+    private func setTabBarItemColors(_ itemAppearance: UITabBarItemAppearance) {
+        itemAppearance.normal.iconColor = UIColor(named: "Gray")
+        itemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "Gray") ?? .lightGray]
+        
+        itemAppearance.selected.iconColor = UIColor(named: "Primary")
+        itemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "Primary") ?? .white]
     }
 }
 
-class SecondViewController: UIViewController {
+protocol ServerListDelegate: class {
+    func onServerTapped(with token: String)
+}
+
+class TestTabBarVC: UITabBarController, ServerListDelegate {
     
-    deinit { print("* deinit -> SecondViewController") }
+    deinit { print("* deinit -> TestTabBarVC") }
     
+    var token: String?
+    
+    func onServerTapped(with token: String) {
+        self.token = token
+
+        print("** TestTabBarVC - token ibanii -> \(token)")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .red
+        self.delegate = self
+    }
+}
+
+extension TestTabBarVC: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+
+
+
+        switch viewController {
+        case is ServerInfoViewController:
+            print("ooooopaaa")
+        default:
+            break
+        }
     }
 }

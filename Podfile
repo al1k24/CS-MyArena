@@ -7,6 +7,7 @@ target 'CS-MyArena' do
 
   # Pods for CS-MyArena
   pod 'Alamofire'
+  
   pod 'SPAlert'
   pod 'SPStorkController'
 end

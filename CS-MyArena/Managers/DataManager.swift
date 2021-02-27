@@ -12,6 +12,26 @@ class DataManager {
     private init() {}
     static let shared = DataManager()
     
+    private var tokens = [ //Для теста пока так
+        "9995a3c768b8a71c33023fe2b2ef393e",
+        "9995a3c768b8a71c33023fe2b2ef393e",
+        "9995a3c768b8a71c33023fe2b2ef393e"
+    ]
+    
+//    func fetchServers() -> [Server]? {
+//        var servers = [Server]()
+//        for token in tokens {
+//            getServerStatusData(by: token) { (data) in
+//                guard let data = data else { return }
+//                
+//                servers.append(data)
+//                
+////                print(self.tokens.endIndex)
+//            }
+//        }
+//        return servers
+//    }
+    
     func getServerStatusData(by token: String, _ completion: @escaping (Server?) -> Void) {
         let param = ["ver": "2"]
         MyArenaService.shared.fetchData(of: ServerResult.self, by: token, for: .status, with: param) { [weak self] (result) in
