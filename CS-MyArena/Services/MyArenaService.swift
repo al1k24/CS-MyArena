@@ -36,8 +36,7 @@ class MyArenaService {
     private init() {}
     static let shared = MyArenaService()
     
-    private let host = "https://myarena.ru"
-    private let path = "/api.php"
+    private let host = "https://myarena.ru/api.php"
     
     func fetchData<T: Decodable>(of: T.Type,
                                  by token: String,
@@ -73,6 +72,6 @@ class MyArenaService {
     }
     
     private func formatUrl(with query: Query, and token: String) -> String {
-        return "\(host)\(path)?token=\(token)&query=\(query.rawValue)"
+        return "\(host)?token=\(token)&query=\(query.rawValue)"
     }
 }
