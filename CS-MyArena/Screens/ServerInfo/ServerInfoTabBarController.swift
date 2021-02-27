@@ -17,6 +17,7 @@ class ServerInfoTabBarController: UITabBarController {
         super.viewDidLoad()
         
         
+        
         setupNavigation()
         setupTabBarController()
     }
@@ -53,7 +54,7 @@ class ServerInfoTabBarController: UITabBarController {
         
         
         self.viewControllers = viewControllers.map { UINavigationController(rootViewController: $0)}
-//        tabBarController.setViewControllers(viewControllers, animated: true)
+//        self.setViewControllers(viewControllers, animated: true)
         
         let appearance = UITabBarAppearance()
         appearance.shadowColor = .clear
