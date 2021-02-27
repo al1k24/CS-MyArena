@@ -22,12 +22,13 @@ class ServersListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureNavigationsBarItems("Servers list")
-        configureTableView()
+        setupNavigationController()
+        setupTableView()
     }
     
     // MARK: - Table view
-    private func configureTableView() {
+    private func setupTableView() {
+        tableView.rowHeight = 128
         tableView.separatorStyle = .none
         tableView.backgroundColor = UIColor(named: "Background")
         
@@ -35,8 +36,8 @@ class ServersListTableViewController: UITableViewController {
     }
     
     // MARK: - Navigations Bar
-    private func configureNavigationsBarItems(_ title: String) {
-        guard let navController = navigationController else { return }
+    private func setupNavigationController() {
+        guard let navController = self.navigationController else { return }
         
         let navBarAppearance: UINavigationBarAppearance = {
             let nba = UINavigationBarAppearance()
@@ -63,13 +64,11 @@ class ServersListTableViewController: UITableViewController {
         navController.navigationBar.prefersLargeTitles = true
 //        navController.navigationBar.overrideUserInterfaceStyle = .dark
         
-        navigationItem.title = title
+        navigationItem.title = "Servers list"
         
         navigationItem.rightBarButtonItems = [
             .init(barButtonSystemItem: .add, target: self, action: #selector(addServerBarButtonTapped))
         ]
-        
-//        navigationItem.leftBarButtonItem = .init(title: "Log In", style: .plain, target: self, action: #selector(handleLogin))
     }
     
     @objc private func addServerBarButtonTapped() {
@@ -108,20 +107,12 @@ class ServersListTableViewController: UITableViewController {
 
 //            self.servers.append(data)
             cell.configure(with: data)
-//            print(data)
-//                tableView.reloadData()
         }
     
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 128
-    }
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        //https://www.youtube.com/watch?v=6CEWHlM8Ecw
         let tabBarController = ServerInfoTabBarController()
         navigationController?.pushViewController(tabBarController, animated: true)
     }
