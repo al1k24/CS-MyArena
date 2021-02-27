@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol AddServerViewControllerDelegate: class {
+    func addServerViewController(_ vc: AddServerViewController, didAddToken token: String)
+}
+
 class AddServerViewController: UIViewController {
     
     deinit { print("* deinit -> AddServerViewController") }
@@ -14,21 +18,21 @@ class AddServerViewController: UIViewController {
     @IBOutlet private weak var tokenField: UITextField!
     @IBOutlet private weak var addServerButton: UIButton!
     
-    var completionHandler: ((String) -> Void)?
-
+    weak var delegate: AddServerViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureButton()
+        setupButton()
     }
     
-    private func configureButton() {
+    private func setupButton() {
         addServerButton.addTarget(self, action: #selector(addButtonTapped), for: .touchUpInside)
     }
     
     @objc private func addButtonTapped() {
         if let token = self.tokenField.text {
-            completionHandler?(token)
+            delegate?.addServerViewController(self, didAddToken: token)
         }
         
         self.dismiss(animated: true)

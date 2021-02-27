@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ServerMapsTableViewController: UITableViewController, ServerListDelegate {
+class ServerMapsTableViewController: UITableViewController {
         
     deinit { print("* deinit -> ServerMapsTableViewController") }
 

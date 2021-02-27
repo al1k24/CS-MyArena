@@ -37,7 +37,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Server name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxx-cG-iIl">
-                    <rect key="frame" x="0.0" y="8" width="414" height="30"/>
+                    <rect key="frame" x="0.0" y="8" width="414" height="35"/>
                     <fontDescription key="fontDescription" name="Metropolis-Black" family="Metropolis" pointSize="30"/>
                     <color key="textColor" name="White"/>
                     <nil key="highlightedColor"/>
@@ -65,13 +65,13 @@
                     <rect key="frame" x="16" y="236" width="382" height="52"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLG-gw-WzB">
-                            <rect key="frame" x="20" y="14" width="342" height="11"/>
+                            <rect key="frame" x="20" y="14" width="342" height="13"/>
                             <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="11"/>
                             <color key="textColor" name="Gray"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocationText" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmW-oT-d88">
-                            <rect key="frame" x="20" y="29" width="342" height="14"/>
+                            <rect key="frame" x="20" y="31" width="342" height="16.333333333333329"/>
                             <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
                             <color key="textColor" name="White"/>
                             <nil key="highlightedColor"/>
@@ -91,13 +91,13 @@
                     <rect key="frame" x="16" y="308" width="382" height="52"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUc-08-1fo">
-                            <rect key="frame" x="20" y="14" width="342" height="11"/>
+                            <rect key="frame" x="20" y="14" width="342" height="13"/>
                             <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="11"/>
                             <color key="textColor" name="Gray"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HostingServerType" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpV-Wh-dbd">
-                            <rect key="frame" x="20" y="29" width="342" height="14"/>
+                            <rect key="frame" x="20" y="31" width="342" height="16.333333333333329"/>
                             <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
                             <color key="textColor" name="White"/>
                             <nil key="highlightedColor"/>
@@ -117,13 +117,13 @@
                     <rect key="frame" x="16" y="380" width="382" height="52"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdt-tO-TNW">
-                            <rect key="frame" x="20" y="14" width="342" height="11"/>
+                            <rect key="frame" x="20" y="14" width="342" height="13"/>
                             <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="11"/>
                             <color key="textColor" name="Gray"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/12/2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3D-RB-4q7">
-                            <rect key="frame" x="20" y="29" width="342" height="14"/>
+                            <rect key="frame" x="20" y="31" width="342" height="16.333333333333329"/>
                             <fontDescription key="fontDescription" name="Metropolis-Medium" family="Metropolis" pointSize="14"/>
                             <color key="textColor" name="White"/>
                             <nil key="highlightedColor"/>

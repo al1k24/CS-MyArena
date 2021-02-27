@@ -13,6 +13,7 @@
 		4422973C25E8D8AF004424C3 /* ServerConsoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4422973A25E8D8AF004424C3 /* ServerConsoleViewController.xib */; };
 		4422974225E8D929004424C3 /* ServerMapsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4422974025E8D929004424C3 /* ServerMapsTableViewController.swift */; };
 		4422974325E8D929004424C3 /* ServerMapsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4422974125E8D929004424C3 /* ServerMapsTableViewController.xib */; };
+		4422977425EAA78B004424C3 /* ServerInfoTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4422977325EAA78B004424C3 /* ServerInfoTabBarController.swift */; };
 		446C2BC825DFE5DB0037C732 /* Metropolis-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9B25DFE1B90037C732 /* Metropolis-Black.otf */; };
 		446C2BCA25DFE5E00037C732 /* Metropolis-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2B9625DFE1B90037C732 /* Metropolis-BlackItalic.otf */; };
 		446C2BCE25DFE5E60037C732 /* Metropolis-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 446C2BA025DFE1BB0037C732 /* Metropolis-BoldItalic.otf */; };
@@ -59,6 +60,7 @@
 		4422973A25E8D8AF004424C3 /* ServerConsoleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerConsoleViewController.xib; sourceTree = "<group>"; };
 		4422974025E8D929004424C3 /* ServerMapsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerMapsTableViewController.swift; sourceTree = "<group>"; };
 		4422974125E8D929004424C3 /* ServerMapsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerMapsTableViewController.xib; sourceTree = "<group>"; };
+		4422977325EAA78B004424C3 /* ServerInfoTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ServerInfoTabBarController.swift; path = "CS-MyArena/Screens/ServerInfo/ServerInfoTabBarController.swift"; sourceTree = SOURCE_ROOT; };
 		446C2B6A25DFB9180037C732 /* Metropolis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Bold.otf"; sourceTree = "<group>"; };
 		446C2B6B25DFB9180037C732 /* Metropolis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-SemiBold.otf"; sourceTree = "<group>"; };
 		446C2B9325DFE0530037C732 /* Metropolis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Metropolis-Regular.otf"; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 			children = (
 				448CA31A25DF1A7200E57FDE /* Cell */,
 				448CA31525DF18E100E57FDE /* ServersListTableViewController.swift */,
+				4422977325EAA78B004424C3 /* ServerInfoTabBarController.swift */,
 			);
 			path = ServersList;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				448CA31225DF0F4100E57FDE /* ServerResult.swift in Sources */,
 				44A2613825DD83CC009A44DA /* NibLoadable.swift in Sources */,
 				44A3C52B25E2A6150098D77E /* NetworkError.swift in Sources */,
+				4422977425EAA78B004424C3 /* ServerInfoTabBarController.swift in Sources */,
 				448CA31D25DF1A9A00E57FDE /* ServersListTableViewCell.swift in Sources */,
 				44A3C53025E2D2120098D77E /* DataManager.swift in Sources */,
 				44A2610625DD7283009A44DA /* SceneDelegate.swift in Sources */,

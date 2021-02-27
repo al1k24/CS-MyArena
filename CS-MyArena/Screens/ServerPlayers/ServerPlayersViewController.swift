@@ -9,6 +9,19 @@ import UIKit
 
 class ServerPlayersViewController: UIViewController {
     
+//    required init(_ token: String) {
+////        super.init(nibName: <#T##String?#>, bundle: <#T##Bundle?#>)
+//
+//
+//    }
+    
+//    var token: String?
+    
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+    //    convenience init(_ token: token)
+    
     deinit { print("* deinit -> ServerPlayersViewController") }
 
     override func viewDidLoad() {

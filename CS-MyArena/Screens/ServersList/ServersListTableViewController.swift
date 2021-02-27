@@ -17,14 +17,14 @@ class ServersListTableViewController: UITableViewController {
         "9995a3c768b8a71c33023fe2b2ef393e"
     ]
     
+//    private var ggtokens: [Strong: Server] ////Вот так сделать
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureNavigationsBarItems("Servers list")
         configureTableView()
     }
-    
-    weak var delegate: ServerListDelegate?
     
     // MARK: - Table view
     private func configureTableView() {
@@ -74,9 +74,7 @@ class ServersListTableViewController: UITableViewController {
     
     @objc private func addServerBarButtonTapped() {
         let controller = AddServerViewController()
-        controller.completionHandler = { token in
-            print("* Token = \(token)")
-        }
+        controller.delegate = self
         
         let transitionDelegate = SPStorkTransitioningDelegate()
         transitionDelegate.customHeight = 568 //268
@@ -122,90 +120,15 @@ class ServersListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let serverInfoVC: UIViewController = {
-            let vc = ServerInfoViewController()
-            vc.tabBarItem = UITabBarItem(title: "Info",
-                                         image: UIImage(systemName: "house"),
-                                         selectedImage: UIImage(systemName: "house.fill"))
-            return vc
-        }()
-        
-        let viewControllers = [
-            serverInfoVC,
-            ServerPlayersViewController(),
-            ServerMapsTableViewController(),
-            ServerConsoleViewController()
-        ]
-        
-        viewControllers[1].tabBarItem = UITabBarItem(title: "Players",
-                                                     image: UIImage(systemName: "person.2"),
-                                                     selectedImage: UIImage(systemName: "person.2.fill"))
-        viewControllers[2].tabBarItem = UITabBarItem(title: "Maps",
-                                                     image: UIImage(systemName: "map"),
-                                                     selectedImage: UIImage(systemName: "map.fill"))
-        viewControllers[3].tabBarItem = UITabBarItem(title: "Console",
-                                                     image: UIImage(systemName: "text.bubble"),
-                                                     selectedImage: UIImage(systemName: "text.bubble.fill"))
         
         //https://www.youtube.com/watch?v=6CEWHlM8Ecw
-        let tabBarController = TestTabBarVC()
-        self.delegate = tabBarController
-//        tabBarController.viewControllers = viewControllers.map { UINavigationController(rootViewController: $0)}
-        tabBarController.setViewControllers(viewControllers, animated: true)
-        
-        let appearance = UITabBarAppearance()
-        appearance.shadowColor = .clear
-        appearance.backgroundColor = UIColor(named: "Background")
-        setTabBarItemColors(appearance.stackedLayoutAppearance)
-        
-        tabBarController.tabBar.standardAppearance = appearance
-        
+        let tabBarController = ServerInfoTabBarController()
         navigationController?.pushViewController(tabBarController, animated: true)
-        
-        delegate?.onServerTapped(with: tokens[indexPath.row])
-    }
-    
-    private func setTabBarItemColors(_ itemAppearance: UITabBarItemAppearance) {
-        itemAppearance.normal.iconColor = UIColor(named: "Gray")
-        itemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "Gray") ?? .lightGray]
-        
-        itemAppearance.selected.iconColor = UIColor(named: "Primary")
-        itemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "Primary") ?? .white]
     }
 }
 
-protocol ServerListDelegate: class {
-    func onServerTapped(with token: String)
-}
-
-class TestTabBarVC: UITabBarController, ServerListDelegate {
-    
-    deinit { print("* deinit -> TestTabBarVC") }
-    
-    var token: String?
-    
-    func onServerTapped(with token: String) {
-        self.token = token
-
-        print("** TestTabBarVC - token ibanii -> \(token)")
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.delegate = self
-    }
-}
-
-extension TestTabBarVC: UITabBarControllerDelegate {
-    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-
-
-
-        switch viewController {
-        case is ServerInfoViewController:
-            print("ooooopaaa")
-        default:
-            break
-        }
+extension ServersListTableViewController: AddServerViewControllerDelegate {
+    func addServerViewController(_ vc: AddServerViewController, didAddToken token: String) {
+        print("*[ServersListTableViewController] token = \(token)")
     }
 }
